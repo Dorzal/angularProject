@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-md-auto">
+      <h2>Mes appareils</h2>
+      <ul class="list-group">
+        <app-appareil *ngFor="let appareil of appareils" [appareilName]="appareil.name" [appareilStatus]="appareil.status"></app-appareil>
+      </ul>
+      <button class="btn btn-success" [disabled]="!isAuth" (click)="onAllumer()">Tout allumer</button>
+    </div>    
+  </div>
+</div>>
