@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AppareilService } from './services/appareil.service';
 
 @Component({
   selector: 'app-root',
@@ -6,27 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  isAuth = false;
-
-  appareils = [
-    {
-      name: 'manchine à laver',
-      status: 'éteint'
-    },
-    {
-      name: 'ordinateur',
-      status: 'allumé'
-    },
-    {
-      name: 'télévision',
-      status: 'éteint'
-    }
-  ]
-  constructor() {
-    setTimeout(() => { this.isAuth = true; }, 4000);
-  }
-  onAllumer() {
-    console.log('On allume tout');
+  
+  constructor(){
+    
   }
 }
 
